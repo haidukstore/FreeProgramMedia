@@ -13,9 +13,10 @@ struct Track: Codable {
     
     let key: String
     let title: String
-    let order: Int
+    let order: Int?
     let duration: Int
     let media: Media
+    let isAvailable: Bool
 }
 
 

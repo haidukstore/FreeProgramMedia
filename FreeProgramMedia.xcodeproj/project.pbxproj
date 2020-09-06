@@ -23,6 +23,16 @@
 		D78D18712503BAD90018E0AB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D18702503BAD90018E0AB /* Request.swift */; };
 		D78D18732503C1880018E0AB /* MediaLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D18722503C1880018E0AB /* MediaLibraryViewModel.swift */; };
 		D78D18772503C2980018E0AB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D18762503C2980018E0AB /* ViewModel.swift */; };
+		D78D1884250501760018E0AB /* CollectionViewSlantedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D1879250501750018E0AB /* CollectionViewSlantedCell.swift */; };
+		D78D1885250501760018E0AB /* UICollectionView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D187B250501750018E0AB /* UICollectionView+Helpers.swift */; };
+		D78D1886250501760018E0AB /* UICollectionViewLayout+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D187C250501750018E0AB /* UICollectionViewLayout+Helpers.swift */; };
+		D78D1887250501760018E0AB /* CAShapeLayer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D187D250501750018E0AB /* CAShapeLayer+Helpers.swift */; };
+		D78D1888250501760018E0AB /* CollectionViewSlantedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D187E250501750018E0AB /* CollectionViewSlantedLayout.swift */; };
+		D78D1889250501760018E0AB /* CollectionViewSlantedLayout+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D187F250501760018E0AB /* CollectionViewSlantedLayout+Constants.swift */; };
+		D78D188A250501760018E0AB /* CollectionViewSlantedLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D1881250501760018E0AB /* CollectionViewSlantedLayoutAttributes.swift */; };
+		D78D188B250501760018E0AB /* CollectionViewSlantedMasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D1882250501760018E0AB /* CollectionViewSlantedMasks.swift */; };
+		D78D188C250501760018E0AB /* CollectionViewDelegateSlantedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D1883250501760018E0AB /* CollectionViewDelegateSlantedLayout.swift */; };
+		D78D188F250502EA0018E0AB /* CollectionViewProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78D188E250502EA0018E0AB /* CollectionViewProgramCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +68,16 @@
 		D78D18702503BAD90018E0AB /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		D78D18722503C1880018E0AB /* MediaLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaLibraryViewModel.swift; sourceTree = "<group>"; };
 		D78D18762503C2980018E0AB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D78D1879250501750018E0AB /* CollectionViewSlantedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSlantedCell.swift; sourceTree = "<group>"; };
+		D78D187B250501750018E0AB /* UICollectionView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Helpers.swift"; sourceTree = "<group>"; };
+		D78D187C250501750018E0AB /* UICollectionViewLayout+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+Helpers.swift"; sourceTree = "<group>"; };
+		D78D187D250501750018E0AB /* CAShapeLayer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Helpers.swift"; sourceTree = "<group>"; };
+		D78D187E250501750018E0AB /* CollectionViewSlantedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSlantedLayout.swift; sourceTree = "<group>"; };
+		D78D187F250501760018E0AB /* CollectionViewSlantedLayout+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CollectionViewSlantedLayout+Constants.swift"; sourceTree = "<group>"; };
+		D78D1881250501760018E0AB /* CollectionViewSlantedLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSlantedLayoutAttributes.swift; sourceTree = "<group>"; };
+		D78D1882250501760018E0AB /* CollectionViewSlantedMasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSlantedMasks.swift; sourceTree = "<group>"; };
+		D78D1883250501760018E0AB /* CollectionViewDelegateSlantedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegateSlantedLayout.swift; sourceTree = "<group>"; };
+		D78D188E250502EA0018E0AB /* CollectionViewProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProgramCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +181,7 @@
 		D78D186425039EA60018E0AB /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D78D188D250502CC0018E0AB /* CollectionViewSlanted */,
 				D78D186525039EB00018E0AB /* Storyboard */,
 			);
 			path = UI;
@@ -192,6 +213,47 @@
 				D78D18702503BAD90018E0AB /* Request.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		D78D1878250501460018E0AB /* CollectionViewSlantedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D78D1883250501760018E0AB /* CollectionViewDelegateSlantedLayout.swift */,
+				D78D1879250501750018E0AB /* CollectionViewSlantedCell.swift */,
+				D78D187E250501750018E0AB /* CollectionViewSlantedLayout.swift */,
+				D78D187F250501760018E0AB /* CollectionViewSlantedLayout+Constants.swift */,
+				D78D187A250501750018E0AB /* Extensions */,
+				D78D1880250501760018E0AB /* Internal */,
+			);
+			path = CollectionViewSlantedLayout;
+			sourceTree = "<group>";
+		};
+		D78D187A250501750018E0AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D78D187B250501750018E0AB /* UICollectionView+Helpers.swift */,
+				D78D187C250501750018E0AB /* UICollectionViewLayout+Helpers.swift */,
+				D78D187D250501750018E0AB /* CAShapeLayer+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D78D1880250501760018E0AB /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				D78D1881250501760018E0AB /* CollectionViewSlantedLayoutAttributes.swift */,
+				D78D1882250501760018E0AB /* CollectionViewSlantedMasks.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		D78D188D250502CC0018E0AB /* CollectionViewSlanted */ = {
+			isa = PBXGroup;
+			children = (
+				D78D1878250501460018E0AB /* CollectionViewSlantedLayout */,
+				D78D188E250502EA0018E0AB /* CollectionViewProgramCell.swift */,
+			);
+			path = CollectionViewSlanted;
 			sourceTree = "<group>";
 		};
 		F96A88408352E55233BF6211 /* Pods */ = {
@@ -351,13 +413,23 @@
 				D78D186725039EED0018E0AB /* Libraryl.swift in Sources */,
 				D78D184125039DC40018E0AB /* MainViewController.swift in Sources */,
 				D78D186C2503B7B50018E0AB /* Track.swift in Sources */,
+				D78D188C250501760018E0AB /* CollectionViewDelegateSlantedLayout.swift in Sources */,
 				D78D18772503C2980018E0AB /* ViewModel.swift in Sources */,
+				D78D1888250501760018E0AB /* CollectionViewSlantedLayout.swift in Sources */,
+				D78D188A250501760018E0AB /* CollectionViewSlantedLayoutAttributes.swift in Sources */,
 				D78D183D25039DC40018E0AB /* AppDelegate.swift in Sources */,
+				D78D1885250501760018E0AB /* UICollectionView+Helpers.swift in Sources */,
+				D78D188F250502EA0018E0AB /* CollectionViewProgramCell.swift in Sources */,
+				D78D188B250501760018E0AB /* CollectionViewSlantedMasks.swift in Sources */,
+				D78D1886250501760018E0AB /* UICollectionViewLayout+Helpers.swift in Sources */,
 				D78D183F25039DC40018E0AB /* SceneDelegate.swift in Sources */,
 				D78D18732503C1880018E0AB /* MediaLibraryViewModel.swift in Sources */,
+				D78D1887250501760018E0AB /* CAShapeLayer+Helpers.swift in Sources */,
 				D78D186A25039F460018E0AB /* PictureData.swift in Sources */,
+				D78D1884250501760018E0AB /* CollectionViewSlantedCell.swift in Sources */,
 				D78D186F2503BAAC0018E0AB /* APIProvider.swift in Sources */,
 				D78D18712503BAD90018E0AB /* Request.swift in Sources */,
+				D78D1889250501760018E0AB /* CollectionViewSlantedLayout+Constants.swift in Sources */,
 				D78D184725039DC40018E0AB /* FreeProgramMedia.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

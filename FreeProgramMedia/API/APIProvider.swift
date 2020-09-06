@@ -24,8 +24,6 @@ class APIProvider {
         }, logOptions: .formatRequestAscURL))
     }()
     
-    let disposeBag = DisposeBag()
-    
     init() {
         provider = .init(plugins: [plugin])
     }
@@ -33,5 +31,4 @@ class APIProvider {
     func getMediaLibraryFree() -> Single<Response> {
         provider.rx.request(.mediaFree)
     }
-    
 }

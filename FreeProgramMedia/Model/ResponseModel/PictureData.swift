@@ -18,5 +18,9 @@ struct PictureData<Size: Codable>: Codable {
     
     let url: String?
     let thumbnail: String?
-    let resolution: [Resolution<Size>]
+    let resolutions: [Resolution<Size>]
+    
+    var URL: Foundation.URL? {
+        return Foundation.URL(string: url ?? "")
+    }
 }

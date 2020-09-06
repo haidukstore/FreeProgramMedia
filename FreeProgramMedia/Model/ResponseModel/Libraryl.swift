@@ -10,16 +10,26 @@ import Foundation
 import UIKit
 
 
+struct Size<T: Codable>: Codable {
+    let width: T
+    let height: T
+}
+
 struct Library: Codable {
     
-    let id: String
-    let title: String
-    let isAvailable: Bool
-    let isFree: Bool
-    let isFeatured: Bool
-    let headphones: Bool
-    let descriptionHTML: String?
-    let banner: PictureData<Double>?
-    let cover: PictureData<CGSize>?
-    let track: [Track]
+    let programs: [Program]
+    
+    struct Program: Codable {
+    
+        let id: String
+        let title: String
+        let isAvailable: Bool
+        let isFree: Bool
+        let isFeatured: Bool
+        let headphones: Bool
+        let descriptionHTML: String?
+        let banner: PictureData<Size<Int>>?
+        let cover: PictureData<Int>?
+        let tracks: [Track]
+    }
 }

@@ -30,9 +30,14 @@ protocol ViewModelAttachingProtocol: class {
 
 extension ViewModelAttachingProtocol where Self: UIViewController {
     
-    init(viewModel: ViewModel) {
-        self.init(nibName: nil, bundle: nil)
-        self.viewModel = bind(viewModel: viewModel)
+    static func initWith(viewModel: ViewModel, storyboard: String = "Main") -> Self {
+        
+        let storyboard = UIStoryboard(name: storyboard, bundle: nil)
+        let fullDescription = Self.description()
+        let decription = String(fullDescription.split(separator: ".").last ?? "")
+        let vc: Self = storyboard.instantiateViewController(identifier: decription)
+        vc.viewModel = vc.bind(viewModel: viewModel)
+        return vc
     }
     
     @discardableResult
