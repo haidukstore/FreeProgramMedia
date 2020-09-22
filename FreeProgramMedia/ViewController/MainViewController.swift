@@ -29,7 +29,8 @@ class MainViewController: UIViewController, ViewModelAttachingProtocol {
         
         viewModel.getLibrary()
         
-        viewModel.onLibrary
+        viewModel
+            .onLibrary
             .subscribe(onNext: { [weak self] (result) in
                 switch result {
                 case let .success(lyb):
@@ -54,9 +55,12 @@ class MainViewController: UIViewController, ViewModelAttachingProtocol {
                     cell.contentView.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)
                 }
                 return cell
-            
         }.disposed(by: disposeBag)
         
+        collectionView.rx.itemSelected
+            .subscribe(onNext: { [weak self] (_) in
+                self?.present(UIViewController(), animated: true)
+            }).disposed(by: disposeBag)
         
         return viewModel
     }
